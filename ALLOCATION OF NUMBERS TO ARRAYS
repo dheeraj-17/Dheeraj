@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,num,a[10],c=0,sum=0;
+    scanf("%d",&num);
+    while(num!=0){
+        sum=sum*10+num%10;
+        num=num/10;
+    }
+     c=0;
+      while(sum!=0){
+        a[c]=sum%10;
+        sum=sum/10;
+        c++;
+    }
+    for(i=0;i<c;i++){
+        printf("%d",a[i]);
+    }
+    return 0;
+}
